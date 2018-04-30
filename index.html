@@ -18,6 +18,7 @@
       .message.ok {
         color: green;
       }
+    
     </style>
   </head>
   <body>
@@ -28,7 +29,7 @@
          
           <div class="form-group" ng-class="inputClass">
             <label for="foodItems">Enter Food Items:</label>
-            <input type="text"  ng-model="foodItems" class="form-control form-group-lg" placeholder="List comma separated dishes you usually have for lunch" class="form-control input-lg" ng-keyup="reset();" >
+            <input id="lunch-menu" type="text"  ng-model="foodItems" class="form-control form-group-lg" placeholder="List comma separated dishes you usually have for lunch" class="form-control input-lg" ng-keyup="reset();" >
           </div>
           <button class="btn btn-primary btn-lg active" type="submit" ng-click="checkLunchItems()">Check if too much</button>
         <div class="form-group message {{checkStatus}}">
